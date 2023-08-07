@@ -1,86 +1,88 @@
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div>
       <header id="header" className="fixed-top">
         <div className="container d-flex align-items-center">
           <h1 className="logo me-auto">
-            <a href="index.html">Mentor</a>
+            <NavLink to="/">Mentor</NavLink>
           </h1>
           <nav id="navbar" className="navbar order-last order-lg-0">
             <ul>
               <li>
-                <a className="active" href="index.html">
+                <NavLink className="active" to="/">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="about.html">About</a>
+                <NavLink to="/about">About</NavLink>
               </li>
               <li>
-                <a href="courses.html">Courses</a>
+                <NavLink to="/courses">Courses</NavLink>
               </li>
               <li>
-                <a href="trainers.html">Trainers</a>
+                <NavLink to="/trainers">Trainers</NavLink>
               </li>
               <li>
-                <a href="events.html">Events</a>
+                <NavLink to="/events">Events</NavLink>
               </li>
               <li>
-                <a href="pricing.html">Pricing</a>
+                <NavLink to="/pricing">Pricing</NavLink>
               </li>
 
               <li className="dropdown">
-                <a href="#">
+                <NavLink to="#">
                   <span>Drop Down</span> <i className="bi bi-chevron-down"></i>
-                </a>
+                </NavLink>
                 <ul>
                   <li>
-                    <a href="#">Drop Down 1</a>
+                    <NavLink to="/#">Drop Down 1</NavLink>
                   </li>
                   <li className="dropdown">
-                    <a href="#">
+                    <NavLink to="/#">
                       <span>Deep Drop Down</span>{" "}
                       <i className="bi bi-chevron-right"></i>
-                    </a>
+                    </NavLink>
                     <ul>
                       <li>
-                        <a href="#">Deep Drop Down 1</a>
+                        <NavLink to="#">Deep Drop Down 1</NavLink>
                       </li>
                       <li>
-                        <a href="#">Deep Drop Down 2</a>
+                        <NavLink to="/#">Deep Drop Down 2</NavLink>
                       </li>
                       <li>
-                        <a href="#">Deep Drop Down 3</a>
+                        <NavLink to="/#">Deep Drop Down 3</NavLink>
                       </li>
                       <li>
-                        <a href="#">Deep Drop Down 4</a>
+                        <NavLink to="/#">Deep Drop Down 4</NavLink>
                       </li>
                       <li>
-                        <a href="#">Deep Drop Down 5</a>
+                        <NavLink to="/#">Deep Drop Down 5</NavLink>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href="#">Drop Down 2</a>
+                    <NavLink to="/#">Drop Down 2</NavLink>
                   </li>
                   <li>
-                    <a href="#">Drop Down 3</a>
+                    <NavLink to="/#">Drop Down 3</NavLink>
                   </li>
                   <li>
-                    <a href="#">Drop Down 4</a>
+                    <NavLink to="/#">Drop Down 4</NavLink>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
 
-          <a href="courses.html" className="get-started-btn">
+          <NavLink to="/courses" className="get-started-btn">
             Get Started
-          </a>
+          </NavLink>
         </div>
       </header>
     </div>
